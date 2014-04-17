@@ -1,13 +1,36 @@
 groups:
-    - groupa
+    - bash
+#    - wijs
 recipes:
+    global:
+#         - applications::composer
     mac_os_x:
         - osxdefaults::set_computer_name
+        - osxdefaults::set_terminal_profile
+        - applications::sublime_text_3
 attributes:
     osxdefaults:
-        computername: MyComputerName
+        computername: Bert
     homebrewalt:
         apps:
+            - git
             - git-extras
+            - wget
+            - pwgen
+            - htop-osx
+            - git-flow
+            - mtr
         cask_apps:
-            - sourcetree
+            - onepassword
+            - dropbox
+            - evernote
+            - alfred
+            - spotify
+            - sequel-pro
+            - vmware-fusion
+            - virtualbox
+            - vagrant
+            - appcleaner
+            - skitch
+            - skype
+            - transmit
